@@ -100,7 +100,7 @@ Packages used:
 Use the same Python interpreter for install and run.
 
 ```powershell
-C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m pip install streamlit google-adk google-genai
+python -m pip install streamlit google-adk google-genai
 ```
 
 If you want to use the Google model path, add a local `.env` file with your key:
@@ -114,14 +114,16 @@ This file is ignored by git, so your personal key stays local. If the variable i
 ## Run
 
 ```powershell
-C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m streamlit run app.py
+python -m streamlit run app.py
 ```
 
 If port 8501 is busy, use a different port:
 
 ```powershell
-C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m streamlit run app.py --server.port 8502
+python -m streamlit run app.py --server.port 8502
 ```
+
+If your system needs a specific interpreter path, replace `python` with your local Python executable.
 
 ## Sample Input
 

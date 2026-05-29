@@ -13,7 +13,7 @@ SentinelFlow is a single-file Streamlit demo for a multi-agent SOC incident resp
 Use the same Python interpreter for installation and running the app.
 
 ```powershell
-C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m pip install streamlit google-adk google-genai
+python -m pip install streamlit google-adk google-genai
 ```
 
 If you want to use the Google model path, create a local `.env` file with your key:
@@ -27,14 +27,16 @@ The `.env` file is ignored by git, so your personal key stays local. If it is no
 ## 3. Run
 
 ```powershell
-C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m streamlit run app.py
+python -m streamlit run app.py
 ```
 
 If port 8501 is already in use, run with a different port:
 
 ```powershell
-C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m streamlit run app.py --server.port 8502
+python -m streamlit run app.py --server.port 8502
 ```
+
+If your machine requires a full interpreter path, replace `python` with that path.
 
 ## 4. How To Use
 
