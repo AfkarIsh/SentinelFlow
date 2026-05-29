@@ -103,13 +103,13 @@ Use the same Python interpreter for install and run.
 C:/Users/Asus/AppData/Local/Programs/Python/Python313/python.exe -m pip install streamlit google-adk google-genai
 ```
 
-If you want to use the Google model path, set the API key:
+If you want to use the Google model path, add a local `.env` file with your key:
 
-```powershell
-$env:GOOGLE_API_KEY="YOUR_KEY_HERE"
+```text
+GOOGLE_API_KEY=your_key_here
 ```
 
-This variable is optional. If it is not set, the app uses the local sequential fallback.
+This file is ignored by git, so your personal key stays local. If the variable is not set, the app uses the local sequential fallback.
 
 ## Run
 
